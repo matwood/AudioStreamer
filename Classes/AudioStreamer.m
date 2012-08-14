@@ -1291,7 +1291,7 @@ static void ASReadStreamCallBack
 			CFTypeRef message =
             CFReadStreamCopyProperty(stream, kCFStreamPropertyHTTPResponseHeader);
 			httpHeaders =
-            (__bridge NSDictionary *)CFHTTPMessageCopyAllHeaderFields((CFHTTPMessageRef)message);
+            (__bridge_transfer NSDictionary *)CFHTTPMessageCopyAllHeaderFields((CFHTTPMessageRef)message);
 			CFRelease(message);
 			
 			//

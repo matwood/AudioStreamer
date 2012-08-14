@@ -46,6 +46,7 @@
 #define ah_retain retain
 #define ah_dealloc dealloc
 #define __bridge
+#define __bridge_transfer
 #endif
 #endif
 
